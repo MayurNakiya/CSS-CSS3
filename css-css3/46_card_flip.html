@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite shoppy task 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .pro_card{
+            width: 250px;
+            height: 400px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        .pro_img{
+            width: 250px;
+            height: 240px;
+            position: relative;
+        }
+        .pro_img .front{
+            position: absolute;
+            transform: rotateY(0deg);
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .pro_img .back{
+            position: absolute;
+            transform: rotateY(180deg);
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .pro_img:hover .front{
+            transform: rotateY(180deg);
+        }
+        .pro_img:hover .back{
+            transform: rotateY(0deg);
+        }
+        .pro_img img{
+            padding: 20px 20px 0px 20px;
+        }
+        .pro_view{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+        }
+        @keyframes move{
+            0%{
+                top: 0;
+                opacity: 0;
+            }
+            100%{
+                top: 220px;
+                opacity: 1;
+            }
+        }
+        .pro_img:hover .pro_view{
+            animation: move 1s forwards;
+        }
+        .pro_info{
+            width: 100%;
+            height: 160px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .pro_info .pro_name{
+            color: red;
+            margin-top: 10px;
+        }
+        .pro_info p{
+            font-weight: bold;
+        }
+        .pro_info p del{
+            font-weight: lighter;
+        }
+        .pro_info button{
+            background-color: aqua;
+            border: none;
+            font-size: 13px;
+            padding: 7px 50px;
+            color: white;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="pro_card">
+            <div class="pro_img">
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="pro_view">
+                    QUICK VIEW
+                </div>
+            </div>
+            <div class="pro_info">
+                <p class="pro_name">Formal Blue Shirt</p>
+                <p>$45.99 <del> $69.71 </del> </p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+
+        <div class="pro_card">
+            <div class="pro_img">
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="pro_view">
+                    QUICK VIEW
+                </div>
+            </div>
+            <div class="pro_info">
+                <p class="pro_name">Gabi Full Sleeve Sweatshirt</p>
+                <p>$45.99 <del> $69.71 </del> </p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="pro_card">
+            <div class="pro_img">
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="pro_view">
+                    QUICK VIEW
+                </div>
+            </div>
+            <div class="pro_info">
+                <p class="pro_name">Formal Blue Shirt</p>
+                <p>$45.99 <del> $69.71 </del> </p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="pro_card">
+            <div class="pro_img">
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="pro_view">
+                    QUICK VIEW
+                </div>
+            </div>
+            <div class="pro_info">
+                <p class="pro_name">Formal Blue Shirt</p>
+                <p>$45.99 <del> $69.71 </del> </p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>

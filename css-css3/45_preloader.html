@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>
+    <style>
+        .a{
+            height: 200px;
+			width: 200px;
+			background: transparent;
+			border:12px solid transparent;
+			border-top:12px solid blue;
+            margin: 200px auto;
+			padding: 12px;
+            border-radius: 50%;
+            animation: clockwise 2s linear infinite;
+
+        }
+        .b{
+            height: 150px;
+			width: 150px;
+			background: transparent;
+			border:12px solid transparent;
+			border-top:12px solid coral;
+			padding: 12px;
+			border-radius: 50%;
+            animation: anticlockwise 2s linear infinite;
+        }
+        .c{
+            height: 100px;
+			width: 100px;
+			background: transparent;
+			border:12px solid transparent;
+			border-top:12px solid blue;
+			padding: 12px;
+			border-radius: 50%;
+            animation: clockwise 1s linear infinite;    
+        }
+        .d{
+            height: 50px;
+			width: 50px;
+			background: transparent;
+			border:12px solid transparent;
+			border-top:12px solid coral;
+			border-radius: 50%;
+            padding: 12px;
+            animation: anticlockwise 2s linear infinite;
+        }
+
+        @keyframes clockwise{
+            0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}
+        }
+        @keyframes anticlockwise{
+            0%{transform: rotate(720deg);}
+			100%{transform: rotate(0deg);}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <div class="d">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>NS

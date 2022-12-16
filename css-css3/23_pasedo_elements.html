@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        ::selection{
+            background-color: black;
+            color: white;
+        }
+        h2::first-letter{
+            color: red;
+        }
+        p::first-line{
+            color: blue;
+        }
+        h3::before{
+            content: 'Hello ';
+        }
+        h3::after{
+            content: ' how are you';
+        }
+        h1::before{
+            content: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Geometric-Simple-Background-Image.jpg);
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Mayurr</h2>
+    <h2>Mayur</h2>
+    <h2>Mayur</h2>
+    <h2>Mayur</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, animi maxime itaque, minima numquam quae voluptates corporis odit voluptas eveniet libero! Fuga, repudiandae eaque culpa beatae voluptates unde, saepe corrupti quod quibusdam magnam atque necessitatibus temporibus porro, impedit repellat tenetur accusantium eius laudantium? Recusandae commodi laudantium alias atque id eligendi?</p>
+
+    <h3>Mayur</h3>
+
+    <h1>Mayur</h1>
+
+</body>
+</html>
